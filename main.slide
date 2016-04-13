@@ -47,6 +47,11 @@ In $GOPATH, you must have three folders as follows.
 - Atom with Golint and Golang
 - Vim and Emacs
 
+* This talk
+
+https://github.com/spotlmnop/goLangIntro
+git clone https://github.com/spotlmnop/goLangIntro
+
 * Lets Go already
 .code commands/helloWorld/main.go
 
@@ -55,6 +60,13 @@ In $GOPATH, you must have three folders as follows.
 - Floating point types: float32 and float64
 - Strings
 - Booleans
+
+* Variables
+.code commands/helloWorld/main.go /^func variables/,/^}/
+*Constants*
+
+.code commands/helloWorld/main.go /^func constants/,/^}/
+
 
 
 
