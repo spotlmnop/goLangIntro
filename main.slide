@@ -42,12 +42,17 @@ In $GOPATH, you must have three folders as follows.
 .image ./images/goCommand.png 500 600
 
 * IDEs
-- Visual Studio Code
+.link  https://github.com/Microsoft/vscode-go Visual Studio Code (vscode-go)
 - IntelliJ with Golang Plugin
 - Atom with Golint and Golang
 - Vim and Emacs
 
 * Lets Go already
 .code commands/helloWorld/main.go
+
+Types
+- Integers - uint8, uint16, uint32, uint64, int8, int16, int32 and int64.
+- Floating point types: float32 and float64
+
 
 
