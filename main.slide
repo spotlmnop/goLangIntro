@@ -1,0 +1,53 @@
+Go(lang)
+Short introduction
+
+Author: Pradeep Mahdevu
+
+* Who am I?
+
+* Why Go?
+- Fast Compiled
+- Garbage-collected
+- MultiCore Hardware
+- Lightweight type system
+- Cross Compile and Cross Platform
+
+* Installation
+*Ubuntu*
+
+    sudo add-apt-repository ppa:gophers/go
+    sudo apt-get update
+    sudo apt-get install golang-stable
+
+*Mac*
+
+    brew install golang
+
+*$PATH*
+
+    export GOROOT=$HOME/go        # Brewers - /usr/local/opt/go/libexec
+    export PATH=$PATH:$GOROOT/bin
+
+* $GOPATH and workspace
+- Go commands all rely on $GOPATH.
+- This is not the $GOROOT variable where Go is installed.
+In $GOPATH, you must have three folders as follows.
+
+- src for source files whose suffix is .go, .c, .g, .s.
+- pkg for compiled files whose suffix is .a.
+- bin for executable file
+
+* Are we ready to Go?
+
+.image ./images/goCommand.png 500 600
+
+* IDEs
+- Visual Studio Code
+- IntelliJ with Golang Plugin
+- Atom with Golint and Golang
+- Vim and Emacs
+
+* Lets Go already
+.code commands/helloWorld/main.go
+
+
