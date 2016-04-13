@@ -50,9 +50,11 @@ In $GOPATH, you must have three folders as follows.
 * Lets Go already
 .code commands/helloWorld/main.go
 
-Types
+*Types*
 - Integers - uint8, uint16, uint32, uint64, int8, int16, int32 and int64.
 - Floating point types: float32 and float64
+- Strings
+- Booleans
 
 
 
