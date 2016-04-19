@@ -52,6 +52,9 @@ In $GOPATH, you must have three folders as follows.
 https://github.com/spotlmnop/goLangIntro
 git clone https://github.com/spotlmnop/goLangIntro
 
+* Learning Go
+https://tour.golang.org/welcome/1
+
 * Lets Go already
 .code commands/helloWorld/main.go
 
@@ -62,10 +65,63 @@ git clone https://github.com/spotlmnop/goLangIntro
 - Booleans
 
 * Variables
-.code commands/helloWorld/main.go /^func variables/,/^}/
-*Constants*
+.code commands/rcTut1/main.go
 
-.code commands/helloWorld/main.go /^func constants/,/^}/
+* Constants
+.code commands/rcTut2/main.go
+
+* Control loops
+- For loop
+- While loop  (You don't need one - just use *for*)
+- if
+- switch
+
+* Arrays and Slices
+
+*Arrays*
+- An array's size is fixed
+- Arrays do not need to be initialized explicitly
+- Go's arrays are values
+- Pass by value ((To avoid the copy you could pass a pointer to the array)
+- inflexible (Why? See slices)
+
+*Slices*
+- Slice type is an abstraction built on top of Go's array type
+- Slice type has no specified length
+- A slice is a descriptor of an array segment
+
+* Slice Internal
+Structure
+
+.image ./images/slice.png
+make([]byte, 5)
+
+.image ./images/slice2.png
+
+
+* Slice Internal contd.
+- s = s[2:4]
+
+.image ./images/slice3.png
+
+
+*Best* *Way*
+t := make([]byte, len(s), (cap(s)+1)*2)
+
+*Append*
+func append(s []T, x ...T) []T
+
+* Maps
+var x map[string]int
+x := make(map[string]int);
+
+var timeZone = map[string]int{
+    "UTC":  0*60*60,
+    "EST": -5*60*60
+}
+
+
+
 
 
 
