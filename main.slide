@@ -55,6 +55,10 @@ git clone https://github.com/spotlmnop/goLangIntro
 * Learning Go
 https://tour.golang.org/welcome/1
 
+* Slide deck
+go get golang.org/x/tools/cmd/present
+    $ present
+
 * Lets Go already
 .code commands/helloWorld/main.go
 
@@ -119,6 +123,22 @@ var timeZone = map[string]int{
     "UTC":  0*60*60,
     "EST": -5*60*60
 }
+
+* Functions
+- Simple
+- Multiple return types
+- Supports Arbitrary number of variables
+- defer
+
+
+* Structs
+.code commands/rcTut8/main.go /^type Employee struct /,/^}/
+
+*new*
+ - Does not initialize the memory, but only zeroes it.
+ - new(T) allocates zeroed storage for a new item of type T and returns its address
+ - Constructors
+ -
 
 
 
