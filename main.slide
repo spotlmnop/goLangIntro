@@ -52,12 +52,15 @@ In $GOPATH, you must have three folders as follows.
 https://github.com/spotlmnop/goLangIntro
 git clone https://github.com/spotlmnop/goLangIntro
 
-* Learning Go
-https://tour.golang.org/welcome/1
+*Learning* *Go*
+    https://tour.golang.org/welcome/1
 
-* Slide deck
+*Slide* *deck*
 go get golang.org/x/tools/cmd/present
     $ present
+
+*Online*
+    https://glot.io/
 
 * Lets Go already
 .code commands/helloWorld/main.go
@@ -95,6 +98,7 @@ go get golang.org/x/tools/cmd/present
 - Slice type is an abstraction built on top of Go's array type
 - Slice type has no specified length
 - A slice is a descriptor of an array segment
+- Iterating over slices
 
 * Slice Internal
 Structure
@@ -121,36 +125,44 @@ func append(s []T, x ...T) []T
 var x map[string]int
 x := make(map[string]int);
 
-var timeZone = map[string]int{
-    "UTC":  0*60*60,
-    "EST": -5*60*60
-}
+    var timeZone = map[string]int{
+        "UTC":  0*60*60,
+        "EST": -5*60*60
+    }
+- Use range to iterate
+
 
 * Functions
 - Simple
 - Multiple return types
 - Supports Arbitrary number of variables
 - defer
+- Functions are values too. They can be passed around just like other values.
 
 
 * Structs
 .code commands/rcTut8/main.go /^type Employee struct /,/^}/
+- A struct is a collection of fields.
+- Exported vs non Exported
+- Go does not have classes, you can define methods on types.
 
 *new*
  - Does not initialize the memory, but only zeroes it.
  - new(T) allocates zeroed storage for a new item of type T and returns its address
  - Constructors? <packageName>.<NewT> Typically in golang
 
- * Interfaces
 
- -  Behavior of an object
+* Interfaces
+- An interface type is defined as a set of method signatures.
+ - Behavior of an object
  - Interfaces are implemented implicitly
  - A type can implement multiple interfaces
  - The Empty Interface Interface{}
     -  Every type implements all 0 of its methods.
 
 * Pointers
--
+- The value of an uninitialized pointer is nil.
+- Declare methods with pointers receivers
 
 
 
