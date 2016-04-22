@@ -9,6 +9,7 @@ type Employee struct {
 	salary int
 }
 
+
 func NewEmployee(name string, id int, salary int) *Employee{
 	x := new(Employee);
 	x.name = name

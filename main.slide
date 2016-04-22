@@ -77,7 +77,9 @@ go get golang.org/x/tools/cmd/present
 * Control loops
 - For loop
 - While loop  (You don't need one - just use *for*)
+- The init and post statement in for loop are optional.
 - if
+- If with a short statement
 - switch
 
 * Arrays and Slices
@@ -137,10 +139,18 @@ var timeZone = map[string]int{
 *new*
  - Does not initialize the memory, but only zeroes it.
  - new(T) allocates zeroed storage for a new item of type T and returns its address
- - Constructors
- -
+ - Constructors? <packageName>.<NewT> Typically in golang
 
+ * Interfaces
 
+ -  Behavior of an object
+ - Interfaces are implemented implicitly
+ - A type can implement multiple interfaces
+ - The Empty Interface Interface{}
+    -  Every type implements all 0 of its methods.
+
+* Pointers
+-
 
 
 
