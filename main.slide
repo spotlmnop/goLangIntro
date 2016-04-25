@@ -164,6 +164,12 @@ x := make(map[string]int);
 - The value of an uninitialized pointer is nil.
 - Declare methods with pointers receivers
 
+*Type assertions and switches*
+
+* Goroutines
+A goroutine is a lightweight thread managed by the Go runtime.
+
+
 
 
 

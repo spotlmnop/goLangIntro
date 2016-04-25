@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	var x string
 	x = "Yo"
-	//The only reason var exists is because const exists.
+
 	//y := "Yo"
 	fmt.Println(x)
 	// fmt.Println("Are yo's equals: ", x == y )
