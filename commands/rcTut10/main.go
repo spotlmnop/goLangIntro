@@ -24,6 +24,10 @@ func main() {
 	//Structures
 	location := GeoLocation{39.2, -119.5}
 	locationAddress := &location
-	fmt.Println((*locationAddress).Lat)
+	fmt.Println(locationAddress.Lat)
 
+}
+
+func addGeoLocation (loc *GeoLocation) float64{
+	return loc.Lat + loc.Lng
 }
